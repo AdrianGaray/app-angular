@@ -11,15 +11,16 @@ import { ComponenteForComponent } from "./componente-for/componente-for.componen
 import { ViewChildComponent } from "./view-child/view-child.component"; 
 import { MensajeService } from './mensaje.service';
 import { ListadoUsuariosComponent } from "./listado-usuarios/listado-usuarios.component";
+import { EjemploPipesComponent } from "./ejemplo-pipes/ejemplo-pipes.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, InterpolacionComponent, PadreComponent,  MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent],
+  imports: [RouterOutlet, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent, EjemploPipesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Servicios y Observables en Angular';
+  title = 'Ejemplo Pipes en Angular';
 
   mensaje: string;
 
