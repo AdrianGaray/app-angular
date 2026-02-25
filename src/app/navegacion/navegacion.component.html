@@ -42,7 +42,24 @@
                     [queryParams]="{mensaje:'Nuevo-mensaje'}">Mensaje</a>
             </li>
 
+            <li class="nav-item dropdown">
+                <!-- Menu: Opciones-->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Opciones</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <!-- SubMenu: Padre-->
+                        <a class="dropdown-item" [routerLink]="['/configuracion/padre']"
+                            routerLinkActive="active">Padre</a>
+                    </li>
+                    <li>
+                        <!-- SubMenu: Hijo-->
+                        <a class="dropdown-item" [routerLink]="['/configuracion/hijo']"
+                            routerLinkActive="active">Hijo</a>
+                    </li>
+                </ul>
+            </li>            
+
         </ul>
     </div>
-
 </nav>
