@@ -1,0 +1,30 @@
+<!-- barra de navegación (navbar) usando Bootstrap + Angular Router-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Eso le dice a Angular Router: 👉 Navegá a la ruta / -->
+        <a class="navbar-brand" [routerLink]="['/']">Angular App</a>
+    </div>
+
+<!-- 
+    Click en Angular App
+            ↓
+    routerLink manda a '/'
+            ↓
+    Router busca en routes
+            ↓
+    Encuentra: path ''
+            ↓
+    Carga: ListadoUsuariosComponent
+            ↓
+    Lo inserta en <router-outlet>
+-->
+
+
+    <!-- boton de menu para dispositivos pequeños-->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>

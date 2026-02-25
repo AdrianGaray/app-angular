@@ -10,5 +10,7 @@ export const routes: Routes = [
     // 👉 Cuando la URL sea: http://localhost:4200/
     // Angular debe mostrar: ListadoUsuariosComponent
     // path: '' = ruta raíz (home).
+    // 👉 Cuando la URL sea: /
+    // Angular debe cargar: ListadoUsuariosComponent
     {path:'', component: ListadoUsuariosComponent}, //localhost:4200/
 ];

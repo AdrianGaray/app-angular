@@ -13,14 +13,15 @@ import { MensajeService } from './mensaje.service';
 import { ListadoUsuariosComponent } from "./listado-usuarios/listado-usuarios.component";
 import { EjemploPipesComponent } from "./ejemplo-pipes/ejemplo-pipes.component";
 import { registerLocaleData } from '@angular/common';
-import localeEs from '@angular/common/locales/es'; 
+import localeEs from '@angular/common/locales/es';
+import { NavegacionComponent } from "./navegacion/navegacion.component"; 
 
 // registramos los dato de localizacion para español
 registerLocaleData(localeEs, 'es'); 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent, EjemploPipesComponent],
+  imports: [RouterOutlet, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent, EjemploPipesComponent, NavegacionComponent],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }], // Configurar idioma español 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
