@@ -1,3 +1,14 @@
 import { Routes } from '@angular/router';
+import { ListadoUsuariosComponent } from './listado-usuarios/listado-usuarios.component';
 
-export const routes: Routes = [];
+
+// Routes → tipo de dato que define las rutas de la app
+// Estás creando un arreglo de rutas (routes)
+// Cada objeto { path, component } es una regla
+export const routes: Routes = [
+    // Significa:
+    // 👉 Cuando la URL sea: http://localhost:4200/
+    // Angular debe mostrar: ListadoUsuariosComponent
+    // path: '' = ruta raíz (home).
+    {path:'', component: ListadoUsuariosComponent}, //localhost:4200/
+];
