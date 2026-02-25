@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { ListadoUsuariosComponent } from './listado-usuarios/listado-usuarios.component';
+import { MostrarMensajeComponent } from './mostrar-mensaje/mostrar-mensaje.component';
 
 
 // Routes → tipo de dato que define las rutas de la app
@@ -13,4 +14,5 @@ export const routes: Routes = [
     // 👉 Cuando la URL sea: /
     // Angular debe cargar: ListadoUsuariosComponent
     {path:'', component: ListadoUsuariosComponent}, //localhost:4200/
+    {path:'mostrar-mensaje', component: MostrarMensajeComponent},
 ];
